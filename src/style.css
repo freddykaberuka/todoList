@@ -1,3 +1,80 @@
 body {
-    background-color: bisque;
+  background: #f2f2f2;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.container-wrap {
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  margin-left: 6px;
+}
+
+.fa-sync {
+  padding: 18px;
+}
+
+form {
+  margin-left: 6px;
+}
+
+.clear {
+  text-align: center;
+  justify-content: center;
+  color: rgb(119, 113, 113);
+  background-color: #ccc;
+  height: 8vh;
+}
+
+.clear p {
+  padding-top: 20px;
+}
+
+.todo-item {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.item-wrap {
+  display: flex;
+}
+
+.checkbox {
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.fa-ellipsis-vertical {
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 15px 0;
+  border: 0 solid #ccc;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-style: italic;
+}
+
+#description {
+  width: 100%;
 }
