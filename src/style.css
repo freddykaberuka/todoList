@@ -39,10 +39,6 @@ form {
   height: 8vh;
 }
 
-.clear p {
-  padding-top: 20px;
-}
-
 .todo-item {
   width: 100%;
   display: flex;
@@ -53,15 +49,18 @@ form {
 
 .item-wrap {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .checkbox {
-  margin-top: 18px;
+  padding-top: 18px;
   margin-right: 10px;
 }
 
 .fa-ellipsis-vertical {
-  margin-top: 18px;
+  margin-top: 15px;
   margin-right: 10px;
 }
 
@@ -69,15 +68,30 @@ input[type='text'] {
   border: none;
   width: 100%;
   cursor: text;
-  padding-top: 15px;
+  padding-top: 0;
 }
 
 form input {
   width: 100%;
-  padding: 15px 0;
+  padding: 10px 0;
   border: 0 solid #ccc;
   background-color: transparent;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
   font-style: italic;
+}
+
+.checked__data {
+  text-decoration: line-through;
+}
+
+.true {
+  text-decoration: line-through;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 20px;
 }

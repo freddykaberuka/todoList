@@ -26,8 +26,8 @@ displayTodo = () => {
   const todoList = document.querySelector('.list-todos');
   todoList.innerHTML = this.todostore.map((el, index) => (`<div>
                         <div class="todo-item">
-                            <div class="item-wrap"><input type="checkbox" class="checkbox">
-                            <input type="text" class="editInput"  data-id="${el.index}" value="${el.description}" />
+                            <div class="item-wrap checked"><input type="checkbox" class="check-box">
+                            <input type="text" class="editInput ${!!el.isCompleted}"  data-id="${el.index}" value="${el.description}" />
                             </div>
                             <div><i data-id='${index}' class="fa-solid fa-trash delete"></i>
                             <i class="fa-solid fa-ellipsis-vertical" data-id='${index}'></i></div>
@@ -47,6 +47,14 @@ removeTodo = (idx) => {
   }
   localStorage.setItem('todostorage', JSON.stringify(this.todostore));
   this.displayTodo();
+  window.location.reload();
+}
+
+clearLocalStorage = () => {
+  const listToclear = this.todostore.filter((todo) => !todo.isCompleted);
+  localStorage.setItem('todostorage', JSON.stringify(listToclear));
+  this.todostore = listToclear;
+  console.log(listToclear);
   window.location.reload();
 }
 }
