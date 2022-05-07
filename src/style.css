@@ -65,6 +65,13 @@ form {
   margin-right: 10px;
 }
 
+input[type='text'] {
+  border: none;
+  width: 100%;
+  cursor: text;
+  padding-top: 15px;
+}
+
 form input {
   width: 100%;
   padding: 15px 0;
@@ -73,8 +80,4 @@ form input {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
   font-style: italic;
-}
-
-#description {
-  width: 100%;
 }
